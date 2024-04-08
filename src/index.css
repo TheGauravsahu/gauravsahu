@@ -15,3 +15,8 @@ html , body{
     background-color: #181414;
     color: white;
 }
+
+.Navbar{
+    position : relative;
+}
+
