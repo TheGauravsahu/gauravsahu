@@ -15,12 +15,10 @@ html , body{
     background-color: #181414;
     color: white;
     position : relative;
-}
-
-.Navbar{
-    position : relative;
+    overflow: hidden
 }
 
 #root{
     position : relative;
+    overflow: hidden
 }
