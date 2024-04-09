@@ -39,7 +39,9 @@ const Navbar = () => {
 
       <div className="mobile-nav lg:hidden flex item-end justify-end">
         <i
-          onClick={toggleLinks}
+          onClick={toggleLinks,()=>{
+          document.body.style.overflow = 'hidden'
+          }
           className="ri-menu-3-line text-2xl"
         ></i>
       </div>
