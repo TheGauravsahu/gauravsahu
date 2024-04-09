@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="Navbar w-full h-16 items-center lg:justify-around justify-between px-3 lg:px-0 pt-6 lg:fixed flex lg:backdrop-blur-md lg:bg-white/0 lg:rounded-xl lg:shadow-lg lg:ring-1 lg:ring-black/5 relative overflow-y-auto overflow-x-hidden ">
+    <div className="Navbar w-full h-16 items-center lg:justify-around justify-between px-3 lg:px-0 pt-6 lg:fixed flex lg:backdrop-blur-md lg:bg-white/0 lg:rounded-xl lg:shadow-lg lg:ring-1 lg:ring-black/5 relative">
       <div className="Logo">
         <img className="h-5" src={Logo} alt="" />
       </div>
