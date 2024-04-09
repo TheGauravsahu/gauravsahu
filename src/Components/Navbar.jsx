@@ -42,7 +42,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
       const Links = document.querySelector(".Links");
       Links.classList.toggle("hidden",() => {
     document.body.style.overflow = 'hidden';
-      };
+      }
       )
      }} 
           className="ri-menu-3-line text-2xl"
