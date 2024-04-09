@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Logo from "/src/assets/GS_text.png";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to manage navbar visibility
-
-  const toggleLinks = () => {
-    setIsOpen(!isOpen); // Toggle navbar visibility on click
-    document.body.style.overflow = isOpen ? 'hidden' : 'auto'; // Disable scrolling when navbar is open
-  };
-
   return (
     <div className="Navbar w-full h-16 items-center lg:justify-around justify-between px-3 lg:px-0 pt-6 lg:fixed flex lg:backdrop-blur-md lg:bg-white/0 lg:rounded-xl lg:shadow-lg lg:ring-1 lg:ring-black/5 relative">
       <div className="Logo">
@@ -38,11 +31,11 @@ const Navbar = () => {
       </div>
 
       <div className="mobile-nav lg:hidden flex item-end justify-end">
-        <i
-          onClick={toggleLinks,()=>{
-          document.body.style.overflow = 'hidden'
-          }
-          }
+        <i onClick={() => {
+      const Links = document.querySelector(".Links");
+      Links.classList.toggle("hidden");
+    document.body.style.overflow = 'hidden';
+     }} 
           className="ri-menu-3-line text-2xl"
         ></i>
       </div>
