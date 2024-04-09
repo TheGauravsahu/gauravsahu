@@ -42,6 +42,7 @@ const Navbar = () => {
           onClick={toggleLinks,()=>{
           document.body.style.overflow = 'hidden'
           }
+          }
           className="ri-menu-3-line text-2xl"
         ></i>
       </div>
