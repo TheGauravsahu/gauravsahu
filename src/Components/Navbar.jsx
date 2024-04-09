@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from "/src/assets/GS_text.png";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar = () => {
+
+  const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false); // State to manage navbar visibility
+
+  const toggleLinks = () => {
+    setIsOpen(!isOpen); // Toggle navbar visibility on click
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto'; // Disable scrolling when navbar is open
+  };
+  
   return (
     <div className="Navbar w-full h-16 items-center lg:justify-around justify-between px-3 lg:px-0 pt-6 lg:fixed flex lg:backdrop-blur-md lg:bg-white/0 lg:rounded-xl lg:shadow-lg lg:ring-1 lg:ring-black/5 relative">
       <div className="Logo">
