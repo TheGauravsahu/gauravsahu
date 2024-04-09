@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import Logo from "/src/assets/GS_text.png";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const Navbar = () => {
-
   const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage navbar visibility
 
